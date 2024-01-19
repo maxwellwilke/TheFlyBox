@@ -1,0 +1,125 @@
+/* Page */
+body {
+    background-color: #44704b;
+    padding: 2em 0;
+}
+
+h1, h2 {
+    color: black;
+}
+
+.sub-header {
+    color: white;
+    padding-left: 1em;
+    transition: padding-left 1.5s;
+}
+
+/* Form */
+#form-section {
+    width: 90vw;
+    transition: width 1.5s;
+    margin: 0 auto;
+}
+
+#form-section input, #form-section textarea {
+    background-color: #608d68;
+    border-color: black;
+}
+
+#form-section label {
+    color: white;
+}
+
+/* Card Area */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    margin: 0 auto;
+}
+
+.col {
+    margin-top: 0;
+}
+
+/* Card */
+.card {
+    width: 85vw;
+    height: 100%;
+    border-radius: .5em;
+    padding: 0;
+    background-color: #d2e9d1;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 16em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: .6em;
+}
+
+/* Transition between viewable and hidden */
+.hide {
+    opacity: 0;
+    filter: blur(.25em);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Card appearance delay */
+.card2 {
+    transition-delay: 200ms;
+}
+
+.card3 {
+    transition-delay: 400ms;
+}
+
+/* Invisible cards */
+.invisible {
+    opacity: 0;
+}
+
+/* Media Query for Medium Screens
+    When the viewport is 768 px or greater
+*/
+@media (min-width: 768px) {
+    #form-section {
+        width: 40vw;
+        transition: width 1.5s;
+    }
+
+    .card {
+        width: 25vw;
+    }
+
+    .sub-header {
+        color: white;
+        padding-left: 8em;
+        transition: padding-left 1.5s;
+    }
+}
+
+/* Media Query for Extra Large Screens
+    When the viewport is 1200 px or greater
+*/
+@media (min-width: 992px) {
+    .card {
+        width: 20vw;
+    }
+}
