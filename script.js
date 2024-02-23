@@ -7,7 +7,7 @@
    to the page.
    
    This app utilizes Bootstrap and features scroll animation, card 
-   display dependent on viewport size, form processing, array processing.
+   display dependent on viewport size, form processing, and array processing.
 */
 
 /**
@@ -34,7 +34,6 @@ const init = () => {
     window.addEventListener('resize', function() {
         reviewRows(outputArea, currentWindow, allRecipes)
     });
-    
 }
 
 /**
